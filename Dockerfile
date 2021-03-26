@@ -2,7 +2,7 @@
 FROM wyveo/nginx-php-fpm:php80
 
 # Add Laravel App
-COPY laravel /usr/share/nginx/html/
+COPY laravel-crud /usr/share/nginx/html/
 
 # Add Composer
 RUN curl -sS https://getcomposer.org/installer | php -- --install-dir=/usr/local/bin --filename=composer
